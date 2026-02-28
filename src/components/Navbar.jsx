@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-4 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 lg:px-12">
+      <div className=" mx-auto px-4 lg:px-12">
         {/* 🔥 Glass Navbar */}
         <nav
           className="
