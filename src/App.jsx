@@ -2,22 +2,39 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-// import HomePage from "./pages/HomePage";
-
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Why from "./pages/Why";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <main role="main" className="min-h-screen bg-[#ffffff]">
+
+      <main
+        role="main"
+        className="
+          min-h-screen
+          bg-gradient-to-b from-[#7B2CBF] to-[#2C3DBF]
+        "
+      >
         <ScrollToTop />
 
-        {/* <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/why" element={<Why />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
 
-        <Footer></Footer>
+        {/* <Footer /> */}
+
+        
       </main>
     </>
   );
