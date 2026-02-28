@@ -78,6 +78,7 @@ export default function HeroSection() {
                 shadow-[0_10px_30px_rgba(163,107,210,0.6)]
                 hover:scale-105 active:scale-95
                 transition
+                cursor-pointer
               "
             >
               Start Your Project →
@@ -94,6 +95,7 @@ export default function HeroSection() {
                 text-[18px]
                 hover:bg-white/10
                 transition
+                cursor-pointer
               "
             >
               View Work
