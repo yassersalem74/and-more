@@ -19,7 +19,7 @@ export default function HeroSection() {
         <h1
           className="
             font-['Roboto'] font-bold
-            text-[32px] md:text-[44px] lg:text-[56px]
+            text-[24px] md:text-[32px] lg:text-[44px]
             leading-tight
           "
         >
@@ -30,7 +30,7 @@ export default function HeroSection() {
         <p
           className="
             font-['Roboto'] font-normal
-            text-[18px] md:text-[24px] lg:text-[32px]
+            text-[18px] md:text-[22px] lg:text-[28px]
             leading-[32px] md:leading-[40px] lg:leading-[48px]
             text-white/90
           "
@@ -52,7 +52,7 @@ export default function HeroSection() {
             rounded-2xl
             px-8 lg:px-12
             h-[64px] lg:h-[80px]
-            text-[18px] lg:text-[32px]
+            text-[18px] lg:text-[28px]
             font-medium
             hover:scale-105 active:scale-95
             shadow-[0_8px_30px_rgba(0,0,0,0.2)]
