@@ -11,6 +11,7 @@ export default function HeroSection() {
         px-4 lg:px-8
         pt-16 lg:pt-24
         pb-10
+        bg-gradient-to-b from-[#7B2CBF] to-[#2C3DBF]
       "
     >
       {/* ===== Content ===== */}

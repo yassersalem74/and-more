@@ -9,9 +9,12 @@ export default function Home() {
   return (
     <div>
       <HeroSection></HeroSection>
+      <div className='bg-gradient-to-r from-[#7B2CBF] to-[#2C3DBF]'>
+
       <AboutSection></AboutSection>
       <SolutionsSection></SolutionsSection>
       <WhyChooseSection></WhyChooseSection>
+      </div>
     </div>
   )
 }

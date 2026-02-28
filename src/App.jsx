@@ -19,7 +19,7 @@ export default function App() {
         role="main"
         className="
           min-h-screen
-          bg-gradient-to-b from-[#7B2CBF] to-[#2C3DBF]
+          
         "
       >
         <ScrollToTop />
