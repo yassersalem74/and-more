@@ -120,8 +120,9 @@ export default function Navbar() {
                   to="/contact"
                   className="
                     text-center
-                    bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
-                    text-white
+                    color-[#7B2CBF]
+                    border-1
+                    border-[#7B2CBF]
                     px-4 py-2
                     rounded-xl
                     font-semibold
