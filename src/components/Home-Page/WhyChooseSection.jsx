@@ -57,12 +57,12 @@ export default function WhyChooseSection() {
         {/* ===== Cards Row ===== */}
         <div className="relative">
           {/* LEFT ARROW */}
-          <button
-            onClick={scrollPrev}
-            className="
-    absolute -left-10 lg:-left-12
+<button
+  onClick={scrollPrev}
+  className="
+    absolute left-2 lg:-left-12
     top-1/2 -translate-y-1/2 z-10
-    w-[80px] h-[80px]
+    w-[56px] h-[56px] lg:w-[80px] lg:h-[80px]
     rounded-2xl
     bg-[#F2EAF940]
     backdrop-blur-[8px]
@@ -71,9 +71,13 @@ export default function WhyChooseSection() {
     hover:scale-110 transition
     cursor-pointer
   "
-          >
-            <img src="/arrow.png" alt="prev" className="w-6 h-6 rotate-180" />
-          </button>
+>
+  <img
+    src="/arrow.png"
+    alt="prev"
+    className="w-5 h-5 lg:w-6 lg:h-6 rotate-180"
+  />
+</button>
 
           {/* SCROLL CONTAINER */}
           <div
@@ -170,12 +174,12 @@ export default function WhyChooseSection() {
           </div>
 
           {/* RIGHT ARROW */}
-          <button
-            onClick={scrollNext}
-            className="
-    absolute -right-10 lg:-right-12
+      <button
+  onClick={scrollNext}
+  className="
+    absolute right-2 lg:-right-12
     top-1/2 -translate-y-1/2 z-10
-    w-[80px] h-[80px]
+    w-[56px] h-[56px] lg:w-[80px] lg:h-[80px]
     rounded-2xl
     bg-[#F2EAF940]
     backdrop-blur-[8px]
@@ -184,9 +188,13 @@ export default function WhyChooseSection() {
     hover:scale-110 transition
     cursor-pointer
   "
-          >
-            <img src="/arrow.png" alt="next" className="w-6 h-6" />
-          </button>
+>
+  <img
+    src="/arrow.png"
+    alt="next"
+    className="w-5 h-5 lg:w-6 lg:h-6"
+  />
+</button>
         </div>
       </div>
     </section>
