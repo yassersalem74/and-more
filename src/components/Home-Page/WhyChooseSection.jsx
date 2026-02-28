@@ -68,7 +68,7 @@ export default function WhyChooseSection() {
     backdrop-blur-[8px]
     flex items-center justify-center
     shadow-lg
-    hover:scale-110 transition
+     transition
     cursor-pointer
   "
 >
@@ -185,7 +185,7 @@ export default function WhyChooseSection() {
     backdrop-blur-[8px]
     flex items-center justify-center
     shadow-lg
-    hover:scale-110 transition
+     transition
     cursor-pointer
   "
 >
