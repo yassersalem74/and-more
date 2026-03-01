@@ -153,7 +153,7 @@ export default function Footer() {
 
         {/* ===== Divider ===== */}
         <div className="mt-12 border-t border-white/20 pt-6 text-center text-white/50 text-sm">
-          Designed & Built with ❤️ by & More
+          Designed & Built with ❤️ by &More
         </div>
       </div>
     </footer>

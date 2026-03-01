@@ -30,7 +30,7 @@ export default function Navbar() {
             to="/"
             className="text-white font-bold text-lg lg:text-xl tracking-wide"
           >
-            & More
+            &More
           </NavLink>
 
           {/* ===== Desktop Menu ===== */}
@@ -45,7 +45,7 @@ export default function Navbar() {
               Services
             </NavLink>
             <NavLink to="/why" className={navLink}>
-              Why & More
+              Why &More
             </NavLink>
           </div>
 
