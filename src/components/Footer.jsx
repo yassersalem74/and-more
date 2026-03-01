@@ -19,7 +19,7 @@ export default function Footer() {
           {/* ===== BRAND ===== */}
           <div className="flex flex-col gap-6">
             <h2 className="text-[22px] font-bold text-[#CAABE5]">
-              & More
+              &More
             </h2>
 
             <p className="text-white/80 leading-[28px]">
@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
 
             <p className="text-white/50 text-sm">
-              © 2026 & More. All rights reserved.
+              © 2026 &More. All rights reserved.
             </p>
           </div>
 
