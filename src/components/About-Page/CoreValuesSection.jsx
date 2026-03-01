@@ -9,25 +9,25 @@ export default function CoreValuesSection() {
       title: "Passion",
       desc: "We are passionate about what we do and committed to delivering exceptional results.",
       icon: "/whiteHeart.png",
-      gradient: "from-pink-500 to-rose-500",
+      gradient: "from-[#A36BD2] to-[#7B2CBF]",
     },
     {
       title: "Excellence",
       desc: "We strive for excellence in every project and never settle for mediocrity.",
       icon: "/target.png",
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-[#CAABE5] to-[#A36BD2]",
     },
     {
       title: "Innovation",
       desc: "We embrace innovation and constantly seek new ways to solve problems.",
       icon: "/light.png",
-      gradient: "from-orange-400 to-yellow-500",
+      gradient: "from-[#969EDF] to-[#2C3DBF]",
     },
     {
       title: "Integrity",
       desc: "We operate with honesty, transparency, and respect in all our relationships.",
       icon: "/shieldwhite.png",
-      gradient: "from-green-500 to-emerald-500",
+      gradient: "from-[#0A66C2] to-[#2C3DBF]",
     },
   ];
 
