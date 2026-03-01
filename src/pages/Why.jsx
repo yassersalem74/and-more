@@ -1,7 +1,10 @@
 import React from 'react'
+import WhyHeroSection from '../components/Why-Page/WhyHeroSection'
 
 export default function Why() {
   return (
-    <div>Why</div>
+    <div>
+      <WhyHeroSection></WhyHeroSection>
+    </div>
   )
 }

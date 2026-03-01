@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutHeroSection() {
+export default function WhyHeroSection() {
   const container = "max-w-5xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-24 lg:py-32";
 
@@ -11,31 +11,31 @@ export default function AboutHeroSection() {
       {/* 🌈 Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
 
-      {/* ✨ Glow */}
+      {/* ✨ Glow Effects */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#CAABE5]/30 blur-[150px] animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#969EDF]/20 blur-[150px] animate-pulse delay-200" />
+      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-[#969EDF]/20 blur-[150px] animate-pulse delay-200" />
 
-      {/* 🌐 Texture */}
+      {/* 🌐 Grid Texture */}
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] [background-size:50px_50px]" />
 
       <div className={`relative z-10 ${container} text-center`}>
         
         {/* 🔹 Label */}
-        <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-lg mb-6">
-          About Us
+        <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-sm mb-6">
+          Why &More
         </p>
 
         {/* 🔥 Title */}
         <h1
           className="
             font-extrabold
-            text-[36px] md:text-[56px] lg:text-[72px]
+            text-[34px] md:text-[56px] lg:text-[72px]
             leading-tight
           "
         >
-          Hi, We’re{" "}
+          Why  Choose{" "}
           <span className="bg-gradient-to-r from-[#CAABE5] via-white to-[#969EDF] bg-clip-text text-transparent">
-            &And More
+            &More
           </span>
         </h1>
 
@@ -52,12 +52,15 @@ export default function AboutHeroSection() {
             max-w-3xl mx-auto
           "
         >
-          We are a marketing and technology solutions company focused on
-          building structured, scalable growth systems for modern businesses.
+          We don’t just deliver services — we build structured systems that
+          drive predictable growth, align strategy with execution, and transform
+          businesses into scalable, high-performing engines.
         </p>
 
-        {/* CTA */}
-        <div className="mt-10">
+        {/* 🚀 CTA */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          
+          {/* Primary */}
           <button
             className="
               px-10 py-4
@@ -72,8 +75,10 @@ export default function AboutHeroSection() {
               cursor-pointer
             "
           >
-            Discover More →
+            Work With Us →
           </button>
+
+
         </div>
       </div>
     </section>
