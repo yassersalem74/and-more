@@ -30,7 +30,7 @@ export default function Navbar() {
             to="/"
             className="text-white font-bold text-lg lg:text-xl tracking-wide"
           >
-            &More
+            & More
           </NavLink>
 
           {/* ===== Desktop Menu ===== */}
@@ -45,44 +45,27 @@ export default function Navbar() {
               Services
             </NavLink>
             <NavLink to="/why" className={navLink}>
-              Why &More
+              Why & More
             </NavLink>
           </div>
 
           {/* ===== CTA (Hero Style) ===== */}
           <div className="hidden lg:block">
-          <NavLink
-  to="/contact"
-  className={({ isActive }) => `
-    px-6 py-3
-    rounded-xl
-    font-semibold
-    text-[16px] lg:text-[18px]
-    transition duration-300
-    relative overflow-hidden
-
-    ${
-      isActive
-        ? "bg-white text-[#7B2CBF] shadow-[0_10px_30px_rgba(255,255,255,0.3)]"
-        : "bg-[#A36BD2] text-white shadow-[0_10px_30px_rgba(163,107,210,0.6)]"
-    }
-
-    hover:scale-105 active:scale-95
-  `}
->
-  {/* 🔥 Hover Gradient Overlay */}
-  <span
-    className="
-      absolute inset-0
-      opacity-0 hover:opacity-100
-      transition duration-300
-      bg-gradient-to-r from-[#CAABE5] to-[#7B2CBF]
-    "
-  />
-
-  {/* ✨ Text */}
-  <span className="relative z-10">Contact Us →</span>
-</NavLink>
+            <NavLink
+              to="/contact"
+              className="
+                px-6 py-3
+                rounded-xl
+                bg-[#A36BD2]
+                text-white font-semibold
+                text-[16px] lg:text-[18px]
+                shadow-[0_10px_30px_rgba(163,107,210,0.6)]
+                hover:scale-105 active:scale-95
+                transition
+              "
+            >
+              Contact Us →
+            </NavLink>
           </div>
 
           {/* ===== Mobile Burger ===== */}
