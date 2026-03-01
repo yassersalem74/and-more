@@ -5,12 +5,12 @@ export default function Tools() {
   const sectionSpace = "py-16 lg:py-24";
 
   const tools = [
+      { name: "Figma", icon: "/Figma-logo.svg", color: "from-pink-500 to-purple-500" },
     { name: "React", icon: "/React.png", color: "from-cyan-400 to-blue-500" },
     { name: "Next.js", icon: "/nextjs.jpg", color: "from-white to-gray-400" },
     { name: "Node.js", icon: "/nodejs.jpg", color: "from-green-400 to-emerald-600" },
     { name: "JavaScript", icon: "/javascrip.png", color: "from-yellow-300 to-yellow-600" },
     { name: "TypeScript", icon: "/typescript.jpg", color: "from-blue-500 to-indigo-600" },
-    { name: "Figma", icon: "/Figma-logo.svg", color: "from-pink-500 to-purple-500" },
     { name: "Flutter", icon: "/flutter.jpg", color: "from-sky-400 to-cyan-500" },
     { name: "React Native", icon: "/React.png", color: "from-cyan-400 to-blue-500" },
   ];
@@ -59,7 +59,7 @@ export default function Tools() {
               {/* 🔥 Gradient Hover */}
               <div
                 className={`
-                  absolute inset-0 opacity-0 group-hover:opacity-100
+                  absolute inset-0 opacity-0 group-hover:opacity-100 rounded-2xl
                   transition duration-500
                   bg-gradient-to-br ${tool.color}
                 `}
