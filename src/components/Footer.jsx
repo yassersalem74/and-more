@@ -141,6 +141,7 @@ export default function Footer() {
                 transition
                 shadow-[0_10px_30px_rgba(163,107,210,0.6)]
                 relative overflow-hidden
+                cursor-pointer
               "
             >
               <span className="relative z-10">Subscribe</span>

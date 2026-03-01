@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProcessTwoSection() {
+export default function WhoWeServeSection() {
   const container = "max-w-7xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-16 lg:py-24";
 
@@ -26,10 +26,7 @@ export default function ProcessTwoSection() {
     <section
       className={`relative w-full text-white ${sectionSpace} overflow-hidden`}
     >
-      {/* 🔥 Background Gradient */}
-      <div className="absolute inset-0" />
-
-      {/* ✨ Animated Glow Blobs */}
+      {/* ✨ Glow Background */}
       <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-[#CAABE5]/30 blur-[120px] animate-pulse" />
       <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-[#969EDF]/30 blur-[120px] animate-pulse delay-200" />
 
@@ -37,11 +34,11 @@ export default function ProcessTwoSection() {
         {/* ===== Header ===== */}
         <header className="text-center mb-16">
           <h2 className="font-bold text-[28px] md:text-[36px] lg:text-[48px] text-[#CAABE5]">
-            Our Process
+            Who We Serve
           </h2>
 
           <p className="mt-3 text-[18px] md:text-[22px] lg:text-[24px] text-white/90">
-            From Insight to Scalable Impact
+            Tailored solutions for every stage of growth
           </p>
         </header>
 
@@ -68,10 +65,10 @@ export default function ProcessTwoSection() {
                 ${index === 2 ? "delay-300" : ""}
               `}
             >
-              {/* ✨ Glow Background */}
+              {/* ✨ Glow Hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-[#CAABE5]/20 to-transparent rounded-2xl" />
 
-              {/* ===== Icon Circle ===== */}
+              {/* ===== Icon ===== */}
               <div
                 className="
                   relative z-10
@@ -85,7 +82,7 @@ export default function ProcessTwoSection() {
                   group-hover:scale-110 group-hover:rotate-6
                 "
               >
-                {/* ✨ Inner Pulse Ring */}
+                {/* Pulse ring */}
                 <div className="absolute inset-0 rounded-full border border-white/30 scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition duration-500" />
 
                 <img
@@ -123,7 +120,7 @@ export default function ProcessTwoSection() {
                 {item.desc}
               </p>
 
-              {/* ✨ Bottom Shine Line */}
+              {/* Bottom line */}
               <div
                 className="
                   absolute bottom-0 left-1/2 -translate-x-1/2
@@ -138,7 +135,7 @@ export default function ProcessTwoSection() {
         </div>
       </div>
 
-      {/* ✨ Keyframe */}
+      {/* Animation */}
       <style>
         {`
           @keyframes fadeUp {
