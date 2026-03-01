@@ -71,26 +71,13 @@ export default function ContactHeroSection() {
               hover:scale-110 hover:shadow-[0_15px_40px_rgba(163,107,210,0.9)]
               active:scale-95
               transition
+              cursor-pointer
             "
           >
             Start Your Project →
           </button>
 
-          {/* Secondary CTA */}
-          <button
-            className="
-              px-10 py-4
-              rounded-xl
-              border border-white/30
-              text-white
-              text-[16px] md:text-[18px]
-              backdrop-blur-md
-              hover:bg-white hover:text-[#2C3DBF]
-              transition
-            "
-          >
-            Book a Call
-          </button>
+       
         </div>
 
         {/* ✨ Quick Trust Row */}
