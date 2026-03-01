@@ -8,7 +8,7 @@ export default function CoreValuesSection() {
     {
       title: "Passion",
       desc: "We are passionate about what we do and committed to delivering exceptional results.",
-      icon: "/whiteHeart.jpg",
+      icon: "/whiteHeart.png",
       gradient: "from-pink-500 to-rose-500",
     },
     {
@@ -20,7 +20,7 @@ export default function CoreValuesSection() {
     {
       title: "Innovation",
       desc: "We embrace innovation and constantly seek new ways to solve problems.",
-      icon: "/whitebulb.png",
+      icon: "/light.png",
       gradient: "from-orange-400 to-yellow-500",
     },
     {
