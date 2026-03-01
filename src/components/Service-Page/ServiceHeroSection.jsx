@@ -3,10 +3,10 @@ import React from "react";
 export default function ServiceHeroSection() {
   const container = "max-w-5xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-24 lg:py-32";
-
+  const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
   return (
     <section
-      className={`relative w-full text-white overflow-hidden ${sectionSpace}`}
+      className={`relative ${heroHeight} w-full text-white overflow-hidden ${sectionSpace}`}
     >
       {/* 🌈 Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
@@ -19,7 +19,6 @@ export default function ServiceHeroSection() {
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] [background-size:50px_50px]" />
 
       <div className={`relative z-10 ${container} text-center`}>
-        
         {/* 🔹 Label */}
         <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-lg mb-6">
           Our Services
@@ -33,9 +32,9 @@ export default function ServiceHeroSection() {
             leading-tight
           "
         >
-           Build{" "}
+          Build{" "}
           <span className="bg-gradient-to-r from-[#CAABE5] via-white to-[#969EDF] bg-clip-text text-transparent">
-            Scalable  Systems
+            Scalable Systems
           </span>
         </h1>
 
@@ -59,7 +58,6 @@ export default function ServiceHeroSection() {
 
         {/* 🚀 CTA Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          
           {/* Primary */}
           <button
             className="
@@ -77,8 +75,6 @@ export default function ServiceHeroSection() {
           >
             Start Your Project →
           </button>
-
-    
         </div>
       </div>
     </section>

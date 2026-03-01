@@ -3,10 +3,10 @@ import React from "react";
 export default function ContactHeroSection() {
   const container = "max-w-5xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-24 lg:py-32";
-
+const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
   return (
     <section
-      className={`relative w-full text-white overflow-hidden ${sectionSpace}`}
+      className={`relative w-full ${heroHeight} text-white overflow-hidden ${sectionSpace}`}
     >
       {/* 🌈 Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
@@ -21,7 +21,7 @@ export default function ContactHeroSection() {
       <div className={`relative z-10 ${container} text-center`}>
         
         {/* 🔹 Label */}
-        <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-sm mb-6">
+        <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-lg mb-6">
           Contact Us
         </p>
 
