@@ -68,7 +68,7 @@ export default function ServiceDetails() {
         {/* Glow */}
         <div className="absolute left-0 top-0 w-[300px] h-[300px] bg-[#CAABE5]/20 blur-[120px]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12">
           <div
             className="
                           group relative
@@ -101,7 +101,7 @@ export default function ServiceDetails() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#5A3FC0] to-[#2C3DBF]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12">
           {/* Back */}
           <button
             onClick={() => navigate(-1)}

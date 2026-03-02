@@ -8,8 +8,8 @@ export default function Service() {
   return (
     <div>
       <ServiceHeroSection></ServiceHeroSection>
-      <Tools></Tools>
       <OurServicesSection></OurServicesSection>
+      <Tools></Tools>
       <StartYourProject></StartYourProject>
     </div>
   )
