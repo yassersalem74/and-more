@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
+import ServiceDetails from './components/Service-Page/ServiceDetails';
 import Why from "./pages/Why";
 import Contact from "./pages/Contact";
 
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service />} />
+          <Route path="/services/:id" element={<ServiceDetails />} />
           <Route path="/why" element={<Why />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
