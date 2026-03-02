@@ -71,15 +71,13 @@ export default function ServiceDetails() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-12">
           <div
             className="
-                    px-4 py-2
-          rounded-xl
-          bg-white/10 backdrop-blur-lg
-          border border-white/20
-          text-white font-medium
-          shadow-lg
-          hover:bg-[#A36BD2] hover:scale-105
-          transition
-          cursor-pointer
+                          group relative
+              rounded-3xl
+              p-8 lg:p-12
+              bg-white/5 backdrop-blur-xl
+              border border-white/10
+              transition duration-500
+              hover:border-[#CAABE5]r
             "
           >
             {/* Glow on hover */}
