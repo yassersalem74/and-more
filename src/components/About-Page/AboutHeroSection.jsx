@@ -34,7 +34,7 @@ export default function AboutHeroSection() {
         >
           Hi, We’re{" "}
           <span className="bg-gradient-to-r from-[#CAABE5] via-white to-[#969EDF] bg-clip-text text-transparent">
-            &And More
+            &More
           </span>
         </h1>
 

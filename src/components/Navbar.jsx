@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const baseText =
-    "font-['Roboto'] font-semibold text-[16px] lg:text-[18px] whitespace-nowrap transition rounded-lg";
+    "font-['Roboto'] font-semibold text-[16px] lg:text-[18px] whitespace-nowrap transition rounded-lg uppercase tracking-wider";
 
   const navLink = ({ isActive }) =>
     `${baseText} px-4 py-2 ${
@@ -28,9 +28,9 @@ export default function Navbar() {
           {/* ===== Logo ===== */}
           <NavLink
             to="/"
-            className="text-white font-bold text-lg lg:text-xl tracking-wide"
+            className="text-white font-bold text-lg lg:text-xl tracking-wider uppercase"
           >
-            & More
+            &MORE
           </NavLink>
 
           {/* ===== Desktop Menu ===== */}
@@ -39,32 +39,49 @@ export default function Navbar() {
               Home
             </NavLink>
             <NavLink to="/about" className={navLink}>
-              About
+              Who We Are
             </NavLink>
             <NavLink to="/services" className={navLink}>
               Services
             </NavLink>
             <NavLink to="/why" className={navLink}>
-              Why & More
+              Why &More
             </NavLink>
           </div>
 
-          {/* ===== CTA (Hero Style) ===== */}
+          {/* ===== CTA ===== */}
           <div className="hidden lg:block">
             <NavLink
               to="/contact"
-              className="
+              className={({ isActive }) => `
                 px-6 py-3
                 rounded-xl
-                bg-[#A36BD2]
-                text-white font-semibold
+                font-semibold
                 text-[16px] lg:text-[18px]
-                shadow-[0_10px_30px_rgba(163,107,210,0.6)]
+                uppercase tracking-wider
+                transition duration-300
+                relative overflow-hidden
+
+                ${
+                  isActive
+                    ? "bg-white text-[#7B2CBF]"
+                    : "bg-[#A36BD2] text-white shadow-[0_10px_30px_rgba(163,107,210,0.6)]"
+                }
+
                 hover:scale-105 active:scale-95
-                transition
-              "
+              `}
             >
-              Contact Us →
+              {/* Gradient Hover */}
+              <span
+                className="
+                  absolute inset-0
+                  opacity-0 hover:opacity-100
+                  transition duration-300
+                  bg-gradient-to-r from-[#CAABE5] to-[#7B2CBF]
+                "
+              />
+
+              <span className="relative z-10">Contact Us →</span>
             </NavLink>
           </div>
 
@@ -89,16 +106,16 @@ export default function Navbar() {
             >
               {[
                 { to: "/", label: "Home" },
-                { to: "/about", label: "About" },
+                { to: "/about", label: "Who We Are" },
                 { to: "/services", label: "Services" },
-                { to: "/why", label: "Why & More" },
+                { to: "/why", label: "Why &More" },
               ].map((item, i) => (
                 <li key={i}>
                   <NavLink
                     to={item.to}
                     className={({ isActive }) =>
                       `
-                      px-4 py-2 rounded-lg transition text-center
+                      px-4 py-2 rounded-lg transition text-center uppercase tracking-wider
                       ${
                         isActive
                           ? "bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF] text-white"
@@ -111,23 +128,26 @@ export default function Navbar() {
                   </NavLink>
                 </li>
               ))}
-              
+
               <div className="divider my-1" />
 
               {/* CTA */}
               <li>
                 <NavLink
                   to="/contact"
-                  className="
+                  className={({ isActive }) => `
                     text-center
-                    color-[#7B2CBF]
-                    border-1
-                    border-[#7B2CBF]
                     px-4 py-2
                     rounded-xl
                     font-semibold
-                    hover:opacity-90
-                  "
+                    uppercase tracking-wider
+                    transition
+                    ${
+                      isActive
+                        ? "bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF] text-white"
+                        : "border border-[#7B2CBF] text-[#7B2CBF] hover:bg-[#A36BD2] hover:text-white"
+                    }
+                  `}
                 >
                   Contact Us →
                 </NavLink>
