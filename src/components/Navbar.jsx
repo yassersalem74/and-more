@@ -54,31 +54,30 @@ export default function Navbar() {
             <NavLink
               to="/contact"
               className={({ isActive }) => `
-                px-6 py-3
-                rounded-xl
-                font-semibold
-                text-[16px] lg:text-[18px]
-                uppercase tracking-wider
-                transition duration-300
-                relative overflow-hidden
+      group relative
+      flex items-center justify-center gap-3
+      px-8 py-3
+      rounded-xl
+      text-white font-semibold
+      text-[16px] lg:text-[18px]
+      uppercase tracking-wider
+      transition duration-300
+      overflow-hidden
+      bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+      shadow-[0_10px_40px_rgba(163,107,210,0.6)]
+      hover:scale-105 active:scale-95
 
-                ${
-                  isActive
-                    ? "bg-white text-[#7B2CBF]"
-                    : "bg-[#A36BD2] text-white shadow-[0_10px_30px_rgba(163,107,210,0.6)]"
-                }
-
-                hover:scale-105 active:scale-95
-              `}
+      ${isActive ? "scale-105 shadow-[0_15px_50px_rgba(163,107,210,0.9)]" : ""}
+    `}
             >
-              {/* Gradient Hover */}
+              {/* Shine Effect */}
               <span
-                className="
-                  absolute inset-0
-                  opacity-0 hover:opacity-100
-                  transition duration-300
-                  bg-gradient-to-r from-[#CAABE5] to-[#7B2CBF]
-                "
+                className={`
+        absolute inset-0
+        bg-gradient-to-r from-transparent via-white/30 to-transparent
+        transition duration-700
+        ${"translate-x-[-100%] group-hover:translate-x-[100%]"}
+      `}
               />
 
               <span className="relative z-10">Contact Us →</span>
@@ -87,10 +86,7 @@ export default function Navbar() {
 
           {/* ===== Mobile Burger ===== */}
           <div className="lg:hidden dropdown dropdown-end">
-            <label
-              tabIndex={0}
-              className="btn btn-ghost text-white text-2xl"
-            >
+            <label tabIndex={0} className="btn btn-ghost text-white text-2xl">
               ☰
             </label>
 
@@ -132,26 +128,41 @@ export default function Navbar() {
               <div className="divider my-1" />
 
               {/* CTA */}
-              <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) => `
-                    text-center
-                    px-4 py-2
-                    rounded-xl
-                    font-semibold
-                    uppercase tracking-wider
-                    transition
-                    ${
-                      isActive
-                        ? "bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF] text-white"
-                        : "border border-[#7B2CBF] text-[#7B2CBF] hover:bg-[#A36BD2] hover:text-white"
-                    }
-                  `}
-                >
-                  Contact Us →
-                </NavLink>
-              </li>
+            {/* CTA */}
+<li className="mt-2">
+  <NavLink
+    to="/contact"
+    className={({ isActive }) => `
+      group relative
+      flex items-center justify-center gap-2
+      px-6 py-3
+      rounded-xl
+      font-semibold
+      uppercase tracking-wider
+      text-white
+      transition duration-300
+      overflow-hidden
+      bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+      shadow-[0_10px_30px_rgba(163,107,210,0.6)]
+      hover:scale-105 active:scale-95
+
+      ${isActive ? "scale-105 shadow-[0_15px_40px_rgba(163,107,210,0.9)]" : ""}
+    `}
+  >
+    {/* Shine animation */}
+    <span
+      className="
+        absolute inset-0
+        bg-gradient-to-r from-transparent via-white/30 to-transparent
+        translate-x-[-100%]
+        group-hover:translate-x-[100%]
+        transition duration-700
+      "
+    />
+
+    <span className="relative z-10">Contact Us →</span>
+  </NavLink>
+</li>
             </ul>
           </div>
         </nav>

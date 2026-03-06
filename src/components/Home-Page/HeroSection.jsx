@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
+  const whatsappNumber = "201033714471";
+
   return (
     <section
       className="
@@ -20,10 +23,8 @@ export default function HeroSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#A36BD2]/40 blur-[120px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        
         {/* ===== LEFT CONTENT ===== */}
         <div className="flex flex-col gap-8">
-          
           {/* Badge */}
           <div
             className="
@@ -68,44 +69,54 @@ export default function HeroSection() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
             {/* Primary */}
-            <button
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
+                group relative
+                flex items-center justify-center gap-3
                 px-8 py-4
                 rounded-xl
-                bg-[#A36BD2]
                 text-white font-semibold
-                text-[18px]
-                shadow-[0_10px_30px_rgba(163,107,210,0.6)]
-                hover:scale-105 active:scale-95
-                transition
-                cursor-pointer
+                text-[16px] lg:text-[18px]
+                bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+                hover:shadow-[0_10px_40px_rgba(163,107,210,0.6)]
+                transition duration-300
+                overflow-hidden
               "
             >
-              Start Your Project →
-            </button>
+              <img src="/whatsapp.png" className="w-6 h-6" />
+              Start Your Project
+            </a>
 
             {/* Secondary */}
-            <button
-              className="
+            <Link
+              to="/services"
+               className="
+                group relative
+                flex items-center justify-center gap-3
                 px-8 py-4
                 rounded-xl
-                border border-white/20
-                bg-white/5 backdrop-blur-md
-                text-white
-                text-[18px]
-                hover:bg-white/10
-                transition
+                bg-white
+                text-[#7B2CBF] font-semibold
+                text-[16px] lg:text-[18px]
+                hover:bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+                hover:text-white
+                hover:shadow-[0_10px_40px_rgba(163,107,210,0.6)]
+                
+                transition duration-300
+                overflow-hidden
                 cursor-pointer
               "
             >
-              View Work
-            </button>
+              View Our Services
+            </Link>
           </div>
         </div>
 
         {/* ===== RIGHT IMAGE ===== */}
         <div className="relative flex justify-center">
-          
           {/* Glow Behind Image */}
           <div className="absolute w-[400px] h-[400px] bg-[#A36BD2]/30 blur-[120px]" />
 
