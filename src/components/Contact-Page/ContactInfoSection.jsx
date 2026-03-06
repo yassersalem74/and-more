@@ -7,27 +7,31 @@ export default function ContactInfoSection() {
   const data = [
     {
       title: "Phone",
-      value: "+20 123 456 789",
+      value: "+20 10 33714471",
       icon: "/whitePhone.png",
       gradient: "from-[#A36BD2] to-[#7B2CBF]",
+      link: "tel:+201033714471",
     },
     {
       title: "Email",
       value: "info@andmore.com",
       icon: "/whiteEmail.png",
       gradient: "from-[#CAABE5] to-[#A36BD2]",
+      link: "mailto:info@andmore.com",
     },
     {
       title: "Location",
       value: "Cairo, Egypt",
       icon: "/whiteLocation.png",
       gradient: "from-[#969EDF] to-[#2C3DBF]",
+      link: "https://maps.app.goo.gl/5prE1oCRqsoA6zbbA",
     },
     {
       title: "LinkedIn",
-      value: "linkedin.com/company/andmore",
+      value: "linkedin.com/company/and-more-solutions",
       icon: "/linkedIn.png",
       gradient: "from-[#0A66C2] to-[#2C3DBF]",
+      link: "https://www.linkedin.com/company/and-more-solutions/",
     },
   ];
 
@@ -35,19 +39,21 @@ export default function ContactInfoSection() {
     <section
       className={`relative w-full text-white ${sectionSpace} overflow-hidden`}
     >
-      {/* 🌈 Background */}
+      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
 
-      {/* ✨ Glow */}
+      {/* Glow */}
       <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#CAABE5]/20 blur-[120px]" />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#969EDF]/20 blur-[120px]" />
 
       <div className={`relative z-10 ${container}`}>
-        {/* ===== Cards ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {data.map((item, index) => (
-            <div
+            <a
               key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 group relative overflow-hidden
                 rounded-2xl
@@ -61,7 +67,7 @@ export default function ContactInfoSection() {
                 cursor-pointer
               "
             >
-              {/* ✨ Gradient Hover Overlay */}
+              {/* Gradient Hover */}
               <div
                 className={`
                   absolute inset-0 opacity-0 group-hover:opacity-100
@@ -70,10 +76,10 @@ export default function ContactInfoSection() {
                 `}
               />
 
-              {/* ✨ Glow Light */}
+              {/* Glow */}
               <div className="absolute -top-20 -left-20 w-60 h-60 bg-white/20 blur-3xl opacity-0 group-hover:opacity-100 transition duration-700" />
 
-              {/* ===== Icon ===== */}
+              {/* Icon */}
               <div
                 className="
                   relative z-10
@@ -93,7 +99,7 @@ export default function ContactInfoSection() {
                 />
               </div>
 
-              {/* ===== Title ===== */}
+              {/* Title */}
               <h3
                 className="
                   relative z-10
@@ -108,8 +114,8 @@ export default function ContactInfoSection() {
                 {item.title.toUpperCase()}
               </h3>
 
-              {/* ===== Value ===== */}
-              <p
+              {/* Value */}
+              {/* <p
                 className="
                   relative z-10
                   text-[16px] lg:text-[18px]
@@ -120,9 +126,9 @@ export default function ContactInfoSection() {
                 "
               >
                 {item.value}
-              </p>
+              </p> */}
 
-              {/* ✨ Bottom Line Animation */}
+              {/* Bottom line */}
               <div
                 className="
                   absolute bottom-0 left-1/2 -translate-x-1/2
@@ -132,7 +138,7 @@ export default function ContactInfoSection() {
                   transition-all duration-500
                 "
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>

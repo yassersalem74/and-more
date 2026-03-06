@@ -3,7 +3,9 @@ import React from "react";
 export default function ContactHeroSection() {
   const container = "max-w-5xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-24 lg:py-32";
-const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
+  const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
+  const whatsappNumber = "201033714471";
+
   return (
     <section
       className={`relative w-full ${heroHeight} text-white overflow-hidden ${sectionSpace}`}
@@ -19,7 +21,6 @@ const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] [background-size:50px_50px]" />
 
       <div className={`relative z-10 ${container} text-center`}>
-        
         {/* 🔹 Label */}
         <p className="uppercase tracking-[4px] text-[#CAABE5]/80 text-lg mb-6">
           Contact Us
@@ -53,44 +54,41 @@ const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
           "
         >
           Whether you’re launching, scaling, or optimizing — we’re here to help.
-          Tell us about your goals, and we’ll turn them into a structured growth system.
+          Tell us about your goals, and we’ll turn them into a structured growth
+          system.
         </p>
 
         {/* 🚀 Actions */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          
           {/* Primary CTA */}
-          <button
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              px-10 py-4
-              rounded-xl
-              bg-[#A36BD2]
-              text-white font-semibold
-              text-[16px] md:text-[18px]
-              shadow-[0_10px_30px_rgba(163,107,210,0.6)]
-              hover:scale-110 hover:shadow-[0_15px_40px_rgba(163,107,210,0.9)]
-              active:scale-95
-              transition
-              cursor-pointer
-            "
+                group relative
+                flex items-center justify-center gap-3
+                px-8 py-4
+                rounded-xl
+                text-white font-semibold
+                text-[16px] lg:text-[18px]
+                bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+                shadow-[0_10px_40px_rgba(163,107,210,0.6)]
+                hover:scale-105 active:scale-95
+                transition duration-300
+                overflow-hidden
+              "
           >
-            Start Your Project →
-          </button>
-
-       
+            <img src="/whatsapp.png" className="w-6 h-6" />
+            Start Your Project
+          </a>
         </div>
 
         {/* ✨ Quick Trust Row */}
         <div className="mt-12 flex flex-wrap justify-center gap-6 text-white/70 text-sm md:text-base">
-          <span className="flex items-center gap-2">
-            ⚡ Fast Response
-          </span>
-          <span className="flex items-center gap-2">
-            🤝 Real Consultation
-          </span>
-          <span className="flex items-center gap-2">
-            📈 Growth Focused
-          </span>
+          <span className="flex items-center gap-2">⚡ Fast Response</span>
+          <span className="flex items-center gap-2">🤝 Real Consultation</span>
+          <span className="flex items-center gap-2">📈 Growth Focused</span>
         </div>
       </div>
     </section>
