@@ -34,12 +34,7 @@ export default function ImpactSection() {
     <section
       className={`relative w-full text-white ${sectionSpace} overflow-hidden`}
     >
-      {/* 🌈 Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
 
-      {/* ✨ Glow Effects */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#CAABE5]/20 blur-[120px]" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#969EDF]/20 blur-[120px]" />
 
       <div className={`relative z-10 ${container}`}>
         {/* ===== Header ===== */}

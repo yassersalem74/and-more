@@ -11,11 +11,10 @@ export default function ContactUsSection() {
   return (
     <section className={`relative w-full text-white ${sectionSpace} overflow-hidden`}>
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#A36BD2] via-[#7B2CBF] to-[#2C3DBF]" />
+      <div className="absolute inset-0 " />
 
       {/* Glow blobs */}
-      <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-[#CAABE5]/30 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-[#969EDF]/30 blur-[120px] animate-pulse delay-200" />
+  
 
       <div className={`relative z-10 ${container}`}>
         {/* CARD */}

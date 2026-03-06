@@ -44,8 +44,7 @@ export default function ProcessSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#7B2CBF]/80 to-[#2C3DBF]/80" />
 
       {/* ✨ Animated Waves */}
-      <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-[#A36BD2]/30 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#969EDF]/30 blur-[120px] animate-pulse delay-200" />
+
 
       <div className={`relative z-10 ${container}`}>
         {/* ===== Header ===== */}

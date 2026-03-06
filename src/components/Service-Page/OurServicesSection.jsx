@@ -7,8 +7,7 @@ export default function OurProjectsSection() {
 
   return (
     <section className="relative py-16 lg:py-24 text-white overflow-hidden">
-      {/* BG */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
+
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12">
         <h2 className="text-center text-[32px] lg:text-[48px] font-bold text-[#CAABE5] mb-16">

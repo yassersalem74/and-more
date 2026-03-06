@@ -19,12 +19,6 @@ export default function Tools() {
     <section
       className={`relative w-full text-white ${sectionSpace} overflow-hidden`}
     >
-      {/* 🌈 Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
-
-      {/* ✨ Glow Effects */}
-      <div className="absolute top-[-100px] left-[-80px] w-[400px] h-[400px] bg-[#CAABE5]/30 blur-[150px] animate-pulse" />
-      <div className="absolute bottom-[-120px] right-[-80px] w-[350px] h-[350px] bg-[#969EDF]/30 blur-[150px] animate-pulse delay-200" />
 
       <div className={`relative z-10 ${container}`}>
         {/* ===== Header ===== */}

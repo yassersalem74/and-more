@@ -28,11 +28,7 @@ export default function ImpactSection() {
   return (
     <section className="relative py-20 text-white overflow-hidden">
 
-      {/* BG */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#5A3FC0] to-[#2C3DBF]" />
 
-      {/* glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-[#CAABE5]/30 blur-[150px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12">
 

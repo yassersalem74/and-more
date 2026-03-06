@@ -23,11 +23,7 @@ export default function OurStorySection() {
     <section
       className={`relative w-full text-white overflow-hidden ${sectionSpace}`}
     >
-      {/* 🌈 Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#7B2CBF] via-[#5A3FC0] to-[#2C3DBF]" />
 
-      {/* ✨ Glow */}
-      <div className="absolute top-[-100px] left-[-80px] w-[350px] h-[350px] bg-[#CAABE5]/30 blur-[120px]" />
 
       <div className={`relative z-10 ${container}`}>
         {/* ===== MAIN FLEX ===== */}

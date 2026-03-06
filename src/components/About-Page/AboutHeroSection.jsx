@@ -4,6 +4,8 @@ export default function AboutHeroSection() {
   const container = "max-w-5xl mx-auto px-4 lg:px-12";
   const sectionSpace = "py-24 lg:py-32";
   const heroHeight = "min-h-[85vh] md:min-h-[90vh] lg:min-h-screen";
+const whatsappNumber = "201033714471";
+
   return (
     <section
       className={`relative  ${heroHeight} w-full text-white overflow-hidden ${sectionSpace}`}
@@ -56,23 +58,29 @@ export default function AboutHeroSection() {
         </p>
 
         {/* CTA */}
-        <div className="mt-10">
-          <button
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Primary CTA */}
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              px-10 py-4
-              rounded-xl
-              bg-[#A36BD2]
-              text-white font-semibold
-              text-[16px] md:text-[18px]
-              shadow-[0_10px_30px_rgba(163,107,210,0.6)]
-              hover:scale-110 hover:shadow-[0_15px_40px_rgba(163,107,210,0.9)]
-              active:scale-95
-              transition
-              cursor-pointer
-            "
+                group relative
+                flex items-center justify-center gap-3
+                px-8 py-4
+                rounded-xl
+                text-white font-semibold
+                text-[16px] lg:text-[18px]
+                bg-gradient-to-r from-[#A36BD2] to-[#7B2CBF]
+                shadow-[0_10px_40px_rgba(163,107,210,0.6)]
+                hover:scale-105 active:scale-95
+                transition duration-300
+                overflow-hidden
+              "
           >
-            Discover More →
-          </button>
+            <img src="/whatsapp.png" className="w-6 h-6" />
+            Ask For More About &More
+          </a>
         </div>
       </div>
     </section>

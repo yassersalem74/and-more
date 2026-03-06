@@ -7,28 +7,24 @@ export default function ContactInfoSection() {
   const data = [
     {
       title: "Phone",
-      value: "+20 10 33714471",
       icon: "/whitePhone.png",
       gradient: "from-[#A36BD2] to-[#7B2CBF]",
       link: "tel:+201033714471",
     },
     {
       title: "Email",
-      value: "info@andmore.com",
       icon: "/whiteEmail.png",
       gradient: "from-[#CAABE5] to-[#A36BD2]",
       link: "mailto:info@andmore.com",
     },
     {
       title: "Location",
-      value: "Cairo, Egypt",
       icon: "/whiteLocation.png",
       gradient: "from-[#969EDF] to-[#2C3DBF]",
       link: "https://maps.app.goo.gl/5prE1oCRqsoA6zbbA",
     },
     {
       title: "LinkedIn",
-      value: "linkedin.com/company/and-more-solutions",
       icon: "/linkedIn.png",
       gradient: "from-[#0A66C2] to-[#2C3DBF]",
       link: "https://www.linkedin.com/company/and-more-solutions/",
@@ -36,17 +32,25 @@ export default function ContactInfoSection() {
   ];
 
   return (
-    <section
-      className={`relative w-full text-white ${sectionSpace} overflow-hidden`}
-    >
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3DBF] via-[#5A3FC0] to-[#A36BD2]" />
-
-      {/* Glow */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#CAABE5]/20 blur-[120px]" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#969EDF]/20 blur-[120px]" />
-
+    <section className={`relative w-full text-white ${sectionSpace}`}>
       <div className={`relative z-10 ${container}`}>
+
+        {/* ===== Section Title ===== */}
+        <header className="text-center mb-14">
+          <h2 className="font-bold text-[28px] md:text-[36px] lg:text-[48px] text-[#CAABE5]">
+            Get In Touch
+          </h2>
+
+          <p className="mt-3 text-[16px] md:text-[18px] text-white/80 max-w-xl mx-auto">
+            Connect with our team to discuss your project, partnerships,
+            or business opportunities.
+          </p>
+
+          {/* divider */}
+          <div className="mx-auto mt-6 w-20 h-[3px] bg-gradient-to-r from-[#CAABE5] to-[#969EDF] rounded-full" />
+        </header>
+
+        {/* ===== Cards ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {data.map((item, index) => (
             <a
@@ -113,20 +117,6 @@ export default function ContactInfoSection() {
               >
                 {item.title.toUpperCase()}
               </h3>
-
-              {/* Value */}
-              {/* <p
-                className="
-                  relative z-10
-                  text-[16px] lg:text-[18px]
-                  text-white/80
-                  break-words
-                  transition duration-300
-                  group-hover:text-white
-                "
-              >
-                {item.value}
-              </p> */}
 
               {/* Bottom line */}
               <div
