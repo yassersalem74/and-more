@@ -39,7 +39,7 @@ export default function Navbar() {
               Home
             </NavLink>
             <NavLink to="/about" className={navLink}>
-              Who We Are
+              About US
             </NavLink>
             <NavLink to="/services" className={navLink}>
               Services
@@ -102,7 +102,7 @@ export default function Navbar() {
             >
               {[
                 { to: "/", label: "Home" },
-                { to: "/about", label: "Who We Are" },
+                { to: "/about", label: "About US" },
                 { to: "/services", label: "Services" },
                 { to: "/why", label: "Why &More" },
               ].map((item, i) => (
