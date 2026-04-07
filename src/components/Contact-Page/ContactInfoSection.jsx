@@ -9,13 +9,13 @@ export default function ContactInfoSection() {
       title: "Phone",
       icon: "/whitePhone.png",
       gradient: "from-[#A36BD2] to-[#7B2CBF]",
-      link: "tel:+201033714471",
+      link: "tel:+201557666699",
     },
     {
       title: "Email",
       icon: "/whiteEmail.png",
       gradient: "from-[#CAABE5] to-[#A36BD2]",
-      link: "mailto:info@andmore.com",
+      link: "mailto:info@andmoresolutions-eg.com",
     },
     {
       title: "Location",
@@ -34,7 +34,6 @@ export default function ContactInfoSection() {
   return (
     <section className={`relative w-full text-white ${sectionSpace}`}>
       <div className={`relative z-10 ${container}`}>
-
         {/* ===== Section Title ===== */}
         <header className="text-center mb-14">
           <h2 className="font-bold text-[28px] md:text-[36px] lg:text-[48px] text-[#CAABE5]">
@@ -42,8 +41,8 @@ export default function ContactInfoSection() {
           </h2>
 
           <p className="mt-3 text-[16px] md:text-[18px] text-white/80 max-w-xl mx-auto">
-            Connect with our team to discuss your project, partnerships,
-            or business opportunities.
+            Connect with our team to discuss your project, partnerships, or
+            business opportunities.
           </p>
 
           {/* divider */}
